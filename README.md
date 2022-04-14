@@ -1,6 +1,6 @@
 # Animation-LWJGL
 
-This re.pository is my homework in computer graphics course, which build an animation using a sequence of model. The project consists of two animations with different background. In addition, I make an interactive edit menu by Swing, so you can  modify geometric transformation in time. I hope these can  help those who are learning [LWJGL](https://www.lwjgl.org/).
+This repository is my homework in computer graphics course, which build an animation using a sequence of model. The project consists of two animations with different background. In addition, I make an interactive edit menu by Swing, so you can  modify geometric transformation in time. I hope these can  help those who are learning [LWJGL](https://www.lwjgl.org/).
 
 
 
