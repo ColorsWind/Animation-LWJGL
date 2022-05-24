@@ -13,13 +13,13 @@ This repository is my homework in computer graphics course, which build an anima
 
 ## Overview of technology
 
-LWJGL is a Java library that enables cross-platform access to OpenGL (Vulkan is also supported, but only OpenGL is used here). Although the graphics card cannot directly access the memory allocated by the JVM virtual machine, we can directly apply for "native memory" to communicate with the graphics card through `ByteBuffer`. In this way, accessing the API of OpenGL through Java is no different from using `glad` in C++.
+LWJGL is a Java library that enables cross-platform access to OpenGL (Vulkan is also supported, but only OpenGL is used here). Although the graphics card cannot directly access the memory allocated by the JVM virtual machine, we can directly apply for "native memory" to communicate with the graphics card through `ByteBuffer`. Besides, accessing the API of OpenGL through Java is almost the same as using `glad` in C++.
 
 In order to refresh the picture at a constant frame rate, we use vertical synchronization technology.
 
 LWJGL provides Java binding of `assimp`. We use [assimp](https://github.com/assimp/assimp) to read the model file.
 
-Due to the relationship of time, the interactive menu does not use OpenGL to draw the hub, but simply calls swing to complete the drawing. thread managed by LWJGL and Swing transaction thread use Java's built-in lock (`synchronized` keyword) to synchronize.
+The interactive menu does not use OpenGL to draw the hub, but simply calls swing to complete the drawing. thread managed by LWJGL and Swing transaction thread use Java's built-in lock (`synchronized` keyword) to synchronize.
 
 ## Screenshot
 
